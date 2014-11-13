@@ -27,7 +27,7 @@ CREATE TABLE `testtbl1` (
   `col1` varchar(255) NOT NULL,
   `col2` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,6 +36,7 @@ CREATE TABLE `testtbl1` (
 
 LOCK TABLES `testtbl1` WRITE;
 /*!40000 ALTER TABLE `testtbl1` DISABLE KEYS */;
+INSERT INTO `testtbl1` VALUES (1,'First test record','This is a test record, that was added on 14 11 12');
 /*!40000 ALTER TABLE `testtbl1` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-12 16:50:07
+-- Dump completed on 2014-11-12 16:52:41
